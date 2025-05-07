@@ -2,7 +2,6 @@ import { useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
 
 import TitleHeader from "../components/TitleHeader";
-import ContactExperience from "../components/models/contact/ContactExperience";
 
 const Contact = () => {
   const formRef = useRef(null);
@@ -20,7 +19,7 @@ const Contact = () => {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    setLoading(true); // Show loading state
+    setLoading(true);
 
     try {
       await emailjs.sendForm(
@@ -30,32 +29,24 @@ const Contact = () => {
         import.meta.env.VITE_APP_EMAILJS_PUBLIC_KEY
       );
 
-      // Reset form and stop loading
-//     setForm({ name: "", email: "", message: "" });
-//   } catch (error) {
-//     console.error("EmailJS Error:", error); // Optional: show toast
-//   } finally {
-//     setLoading(false); // Always stop loading, even on error
-//   }
-// };
       setForm({ name: "", email: "", message: "" });
     } catch (error) {
-      console.error("EmailJS Error:", error); // Optional: show toast
+      console.error("EmailJS Error:", error);
     } finally {
-      setLoading(false); // Always stop loading, even on error
+      setLoading(false);
     }
   };
 
   return (
     <section id="contact" className="flex-center section-padding">
-      <div className="w-full h-full md:px-10 px-5">
+      <div className="w-full max-w-7xl px-4 sm:px-6 lg:px-8">
         <TitleHeader
-          title="Get in Touch – Let’s Connect"
-          sub="💬 Have questions or ideas? Let’s talk! 🚀"
+          title="Get in Touch – Let's Connect"
+          sub="💬 Have questions or ideas? Let's talk! 🚀"
         />
-        <div className="grid-12-cols mt-16">
-          <div className="xl:col-span-5">
-            <div className="flex-center card-border rounded-xl p-10">
+        <div className="flex justify-center items-center mt-16">
+          <div className="w-full max-w-2xl">
+            <div className="flex-center card-border rounded-xl p-5 sm:p-10">
               <form
                 ref={formRef}
                 onSubmit={handleSubmit}
@@ -69,8 +60,9 @@ const Contact = () => {
                     name="name"
                     value={form.name}
                     onChange={handleChange}
-                    placeholder="What’s your good name?"
+                    placeholder="What's your good name?"
                     required
+                    className="w-full"
                   />
                 </div>
 
@@ -82,8 +74,9 @@ const Contact = () => {
                     name="email"
                     value={form.email}
                     onChange={handleChange}
-                    placeholder="What’s your email address?"
+                    placeholder="What's your email address?"
                     required
+                    className="w-full"
                   />
                 </div>
 
@@ -97,10 +90,11 @@ const Contact = () => {
                     placeholder="How can I help you?"
                     rows="5"
                     required
+                    className="w-full"
                   />
                 </div>
 
-                <button type="submit">
+                <button type="submit" className="w-full">
                   <div className="cta-button group">
                     <div className="bg-circle" />
                     <p className="text">
@@ -112,11 +106,6 @@ const Contact = () => {
                   </div>
                 </button>
               </form>
-            </div>
-          </div>
-          <div className="xl:col-span-7 min-h-96">
-            <div className="bg-[#cd7c2e] w-full h-full hover:cursor-grab rounded-3xl overflow-hidden">
-              <ContactExperience />
             </div>
           </div>
         </div>
