@@ -1,91 +1,79 @@
-## 📋 <a name="table">Table of Contents</a>
+# Vansh Agrawal – 3D Portfolio Website
 
-1. 🤖 [Introduction](#introduction)
-2. ⚙️ [Tech Stack](#tech-stack)
-3. 🔋 [Features](#features)
-4. 🤸 [Quick Start](#quick-start)
+Welcome to the source code of my personal portfolio, an immersive 3-D web experience that highlights my skills, projects and interests.
 
-## <a name="introduction">🤖 Introduction</a>
+Live site → [https://www.agrawalvansh.me](https://www.agrawalvansh.me)
 
-The 3D Portfolio project is a highly engaging personal website that features animated 3D scenes, smooth camera transitions, interactive model showcases, and responsive design. It’s ideal for developers, designers, or freelancers looking to stand out in the digital crowd.
+---
 
-If you're getting started and need assistance or face any bugs, join our active Discord community with over **50k+** members. It's a place where people help each other out.
+## About Me
 
-<a href="https://discord.com/invite/n6EdbFJ" target="_blank"><img src="https://github.com/sujatagunale/EasyRead/assets/151519281/618f4872-1e10-42da-8213-1d69e486d02e" /></a>
+I am **Vansh Agrawal**, a passionate front-end / full-stack developer who loves crafting delightful, performant and visually engaging user interfaces. I enjoy combining modern JavaScript frameworks with 3-D graphics to build memorable experiences on the web.
 
-## <a name="tech-stack">⚙️ Tech Stack</a>
+## Built With
 
-- Three.js
-- React Three Fiber
-- Drei
-- GSAP
-- Tailwind CSS
-- Vite
-- React 19
+This site is built entirely with modern, open-source tools:
 
-## <a name="features">🔋 Features</a>
+| Area | Technology |
+|------|------------|
+| Framework | [React 19](https://react.dev/) + [Vite 6](https://vitejs.dev/) |
+| 3-D / WebGL | [Three.js](https://threejs.org/) + [react-three-fiber](https://docs.pmnd.rs/react-three-fiber) + [@react-three/drei](https://github.com/pmndrs/drei) |
+| Animations | [GSAP](https://greensock.com/gsap/) & [@gsap/react](https://greensock.com/react/) |
+| Styling | [Tailwind CSS 4](https://tailwindcss.com/) |
+| Routing | [React-Router 7](https://reactrouter.com/) |
+| Emails | [EmailJS](https://www.emailjs.com/) |
 
-### Features of the 3D Portfolio Project
+…and plenty of custom shaders, hooks and components.
 
-👉 Animated 3D models and reveal animations
+## Key Features
 
-👉 Realistic lighting and shadows
+• Interactive 3-D hero section powered by WebGL & R3F  
+• Smooth, scroll-triggered animations with GSAP  
+• Responsive layout – looks great on mobile, tablet and desktop  
+• Contact form that sends messages straight to my inbox via EmailJS  
+• Clean, modular, component-driven codebase
 
-👉 GSAP-powered scroll interactions
+## Getting Started Locally
 
-👉 Responsive design with Tailwind CSS and Flexbox/Grid
-
-👉 Micro Interactions
-
-👉 Multi-section layout (About, Projects, Contact)
-
-👉 Mobile optimized 3D experience
-
-and many more, including code architecture and reusability.
-
-## <a name="quick-start">🤸 Quick Start</a>
-
-Follow these steps to set up the project locally on your machine.
-
-**Prerequisites**
-
-Make sure you have the following installed on your machine:
-
-- [Git](https://git-scm.com/)
-- [Node.js](https://nodejs.org/en)
-- [npm](https://www.npmjs.com/) (Node Package Manager)
-
-**Cloning the Repository**
+Clone the repository and install dependencies:
 
 ```bash
-git clone https://github.com/adrianhajdin/3d-portfolio.git
+git clone https://github.com/agrawalvansh/3d-portfolio.git
 cd 3d-portfolio
+npm install   # or: yarn
 ```
 
-**Installation**
-
-Install the project dependencies using npm:
-
-```bash
-npm install
-```
-
-**Set Up Environment Variables**
-
-Create a new file named `.env` in the root of your project and add the following content:
-
-```env
-VITE_APP_EMAILJS_SERVICE_ID=
-VITE_APP_EMAILJS_TEMPLATE_ID=
-VITE_APP_EMAILJS_PUBLIC_KEY=
-```
-
-Replace the placeholder values with your actual **[EmailJS](https://www.emailjs.com/)** credentials.
-
-**Running the Project**
+Run the development server:
 
 ```bash
 npm run dev
 ```
 
-Open [http://localhost:5173](http://localhost:5173/) in your browser to view the project.
+Open your browser at `http://localhost:5173` (default Vite port) to view the app.
+
+Build for production & preview locally:
+
+```bash
+npm run build
+npm run preview
+```
+
+## Deployment
+
+The production build in `dist/` is completely static and can be deployed on any static host, e.g. Netlify, Vercel, GitHub Pages.  
+The live site is currently deployed on **[agrawalvansh.me](https://www.agrawalvansh.me)**.
+
+## Project Structure (simplified)
+
+```
+├── public/            # Static assets (models, textures, favicons…)
+├── src/
+│   ├── assets/        # Images & 3-D assets imported by code
+│   ├── components/    # Reusable UI components
+│   ├── sections/      # Page sections (Hero, Experience, Contact, …)
+│   ├── constants/     # Data used by components/sections
+│   ├── styles/        # Tailwind configuration (if any overrides)
+│   └── main.jsx       # Application entry point
+├── index.html         # Root HTML template used by Vite
+└── vite.config.js     # Vite + Tailwind + R3F configuration
+```

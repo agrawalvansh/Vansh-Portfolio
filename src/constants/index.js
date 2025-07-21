@@ -1,9 +1,5 @@
 const navLinks = [
   {
-    name: "Work",
-    link: "#work",
-  },
-  {
     name: "Experience",
     link: "#experience",
   },
@@ -12,8 +8,8 @@ const navLinks = [
     link: "#skills",
   },
   {
-    name: "Testimonials",
-    link: "#testimonials",
+    name: "Resume",
+    link: "#resume",
   },
 ];
 
@@ -29,10 +25,10 @@ const words = [
 ];
 
 const counterItems = [
-  { value: 15, suffix: "+", label: "Years of Experience" },
-  { value: 200, suffix: "+", label: "Satisfied Clients" },
-  { value: 108, suffix: "+", label: "Completed Projects" },
-  { value: 90, suffix: "%", label: "Client Retention Rate" },
+  { value: 2, suffix: " ", label: "Internships Completed" },
+  { value: 5, suffix: "+", label: "Impactful Projects Developed" },  // ServiceNow O.M.S, Bhoomi, Namma Sportika, Vyapaar Connect, ResQLink
+  { value: 4, suffix: "+", label: "Leadership Roles Held" }, // Copperly, NSS, Namma Sportika, Team Lead roles
+  { value: 7, suffix: "+", label: "Key Technologies Utilized" }, // React, Node.js, ServiceNow, C/C++, Python, Firebase, Tailwind, etc. 
 ];
 
 const logoIconsList = [
@@ -73,20 +69,20 @@ const logoIconsList = [
 
 const abilities = [
   {
-    imgPath: "/images/abilities/seo.png",
-    title: "Quality Focus",
-    desc: "Delivering high-quality results while maintaining attention to every detail.",
+    imgPath: "/images/abilities/web-developer.gif",
+    title: "Clean & Scalable Development",
+    desc: "Building maintainable, efficient full-stack applications using React, Node.js, and ServiceNow platform."
   },
   {
-    imgPath: "/images/abilities/chat.png",
-    title: "Reliable Communication",
-    desc: "Keeping you updated at every step to ensure transparency and clarity.",
+    imgPath: "/images/abilities/leader.gif",
+    title: "Collaborative Leadership & Teamwork",
+    desc: "Leading cross-functional teams and fostering effective communication to deliver impactful projects."
   },
   {
-    imgPath: "/images/abilities/time.png",
-    title: "On-Time Delivery",
-    desc: "Making sure projects are completed on schedule, with quality & attention to detail.",
-  },
+    imgPath: "/images/abilities/think.gif",
+    title: "Innovative Problem-Solving & Reliable Delivery",
+    desc: "Resolving complex challenges strategically with continuous learning and ensuring projects meet deadlines with quality."
+  }
 ];
 
 const techStackIcons = [
@@ -124,42 +120,81 @@ const techStackIcons = [
 
 const expCards = [
   {
-    review: "Vansh brought creativity and technical expertise to the team, significantly improving our frontend performance. His work has been invaluable in delivering faster experiences.",
-    imgPath: "/images/expCards/expImgs/exp1.png",
-    logoPath: "/images/expCards/expLogos/logo1.png",
-    title: "Frontend Developer",
-    date: "January 2023 - Present",
+    imgPath: "/images/expCards/expImgs/bhoomi.png",
+    logoPath: "/images/expCards/expLogos/Bhoomi.png",
+    title: "Bhoomi – Gardening Services Platform",
+    date: "Jan 2024 – Apr 2024",
     responsibilities: [
-      "Developed and maintained user-facing features for the Hostinger website.",
-      "Collaborated closely with UI/UX designers to ensure seamless user experiences.",
-      "Optimized web applications for maximum speed and scalability.",
+      "Addressed the lack of online gardening booking by creating a plant ordering and maintenance portal.",
+      "Implemented React.js frontend with Tailwind CSS, Styled Components, Framer Motion, and Redux Toolkit.",
+      "Empowered users to schedule services and track order history via a mobile‑friendly UI hosted on Vercel.",
     ],
   },
   {
-    review: "Vansh’s contributions to Docker's web applications have been outstanding. He approaches challenges with a problem-solving mindset.",
-    imgPath: "/images/expCards/expImgs/exp2.png",
-    logoPath: "/images/expCards/expLogos/logo2.png",
-    title: "Full Stack Developer",
-    date: "June 2020 - December 2023",
+    imgPath: "/images/expCards/expImgs/namma-sportika.png",
+    logoPath: "/images/expCards/expLogos/namma-sportika.png",
+    title: "Namma Sportika – Inter‑University Sports Platform",
+    date: "Jan 2025 – Apr 2025",
     responsibilities: [
-      "Led the development of Docker's web applications, focusing on scalability.",
-      "Worked with backend engineers to integrate APIs seamlessly with the frontend.",
-      "Contributed to open-source projects that were used with the Docker ecosystem.",
+      "Solved scattered event registration by unifying sign‑ups and live scoring for 600+ athletes.",
+      "Built secure Firebase Auth registration, Firestore‑backed real‑time scoreboards, and XLSX.js exports.",
+      "Enabled sports coordinators and athletes across 12 universities to manage and view event data seamlessly.",
     ],
   },
   {
-    review: "Vansh’s work on Appwrite’s mobile app brought a high level of quality and efficiency. He delivered solutions that enhanced our mobile experience & meet our product goals.",
-    imgPath: "/images/expCards/expImgs/exp3.png",
-    logoPath: "/images/expCards/expLogos/logo3.png",
-    title: "React Native Developer",
-    date: "March 2019 - May 2020",
+    imgPath: "/images/expCards/expImgs/erp.png",
+    logoPath: "/images/expCards/expLogos/ags.jpeg",
+    title: "Vyapaar Connect – Offline ERP Suite",
+    date: "July 2024 – Dec 2024",
     responsibilities: [
-      "Built cross-platform mobile apps using React Native, integrating with Appwrite's backend services.",
-      "Improved app performance and user experience through code optimization and testing.",
-      "Coordinated with the product team to implement features based on feedback.",
+      "Eliminated dependence on internet for SMEs by creating a fully offline ERP platform.",
+      "Developed React/Tailwind frontend and Node/Express + SQLite backend with zero‑config migrations.",
+      "Helped small businesses generate GST‑compliant invoices and manage inventory without network costs.",
+    ],
+  },
+  {
+    imgPath: "/images/expCards/expImgs/servicenow.webp",
+    logoPath: "/images/expCards/expLogos/SN.png",
+    title: "ResQLink – ServiceNow Disaster Response Platform",
+    date: "In Development",
+    responsibilities: [
+      "Addressed slow emergency coordination by integrating incident tracking into ServiceNow.",
+      "Built REST API connectors, Flow Designer workflows, and automated escalation scripts in Glide/JavaScript.",
+      "Enabled government and NGO teams to dispatch volunteers and monitor crises in real‑time.",
     ],
   },
 ];
+
+const showcaseCards = [
+  {
+    // ServiceNow Virtual Internship
+    review: "I advanced my skills in ITSM automation, REST API integration, agile software development, and learned to collaborate with global teams while working end-to-end on ServiceNow enterprise solutions.",
+    imgPath: "/images/expCards/expImgs/servicenow.webp",
+    logoPath: "/images/expCards/expLogos/SN.png",
+    title: "ServiceNow – Virtual Internship (ITSM Automation & App Development)",
+    date: "Jan 2025 – July 2025",
+    responsibilities: [
+      "Designed, developed, and deployed ITSM modules using ServiceNow Flow Designer, Business Rules, and Client Scripts.",
+      "Integrated external REST APIs for key modules such as asset and incident management.",
+      "Successfully completed ServiceNow CSA and CAD certifications.",
+      "Worked in agile sprints with international teams, focusing on scalable solutions for enterprise IT automation."
+    ],
+  },
+  {
+    // Connect2Park/ParkNSecure Internship
+    review: "I learned how to develop web modules for real-world products, collaborate in a fast-paced startup setting, and apply agile practices and modern frontend techniques to deliver user-focused smart parking solutions.",
+    imgPath: "/images/expCards/expImgs/c2p.png",
+    logoPath: "/images/expCards/expLogos/c2p.png",
+    title: "Web Development Intern – Connect2Park (ParkNSecure Pvt Ltd)",
+    date: "May 2025 – June 2025",
+    responsibilities: [
+      "Built and enhanced web components for smart parking products using JavaScript and modern frameworks.",
+      "Contributed to product prototyping and iterative development with cross-functional teams.",
+      "Experienced the startup culture: rapid development, frequent feedback cycles, and tight deadlines."
+    ],
+  }
+];
+
 
 const expLogos = [
   {
@@ -255,4 +290,5 @@ export {
   socialImgs,
   techStackIcons,
   navLinks,
+  showcaseCards,
 };
