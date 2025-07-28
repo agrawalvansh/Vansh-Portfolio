@@ -9,7 +9,7 @@ const navLinks = [
   },
   {
     name: "Resume",
-    link: "#resume",
+    link: "/Vansh_Agrawal.pdf",
   },
 ];
 
@@ -123,6 +123,8 @@ const expCards = [
     imgPath: "/images/expCards/expImgs/bhoomi.png",
     logoPath: "/images/expCards/expLogos/Bhoomi.png",
     title: "Bhoomi – Gardening Services Platform",
+    link: "https://the-bhoomi.vercel.app/",
+    linkTest: "the-bhoomi.vercel.app",
     date: "Jan 2024 – Apr 2024",
     responsibilities: [
       "Addressed the lack of online gardening booking by creating a plant ordering and maintenance portal.",
@@ -132,8 +134,10 @@ const expCards = [
   },
   {
     imgPath: "/images/expCards/expImgs/namma-sportika.png",
-    logoPath: "/images/expCards/expLogos/namma-sportika.png",
+    logoPath: "/images/expCards/expLogos/namma-sportika.svg",
     title: "Namma Sportika – Inter‑University Sports Platform",
+    link: "https://namma-sportika.gitam.edu/",
+    linkTest: "namma-sportika.gitam.edu",
     date: "Jan 2025 – Apr 2025",
     responsibilities: [
       "Solved scattered event registration by unifying sign‑ups and live scoring for 600+ athletes.",
@@ -143,8 +147,10 @@ const expCards = [
   },
   {
     imgPath: "/images/expCards/expImgs/erp.png",
-    logoPath: "/images/expCards/expLogos/ags.jpeg",
+    logoPath: "/images/expCards/expLogos/ags.ico",
     title: "Vyapaar Connect – Offline ERP Suite",
+    link: "https://ags-erp.vercel.app/",
+    linkTest: "ags-erp.vercel.app",
     date: "July 2024 – Dec 2024",
     responsibilities: [
       "Eliminated dependence on internet for SMEs by creating a fully offline ERP platform.",
@@ -153,7 +159,7 @@ const expCards = [
     ],
   },
   {
-    imgPath: "/images/expCards/expImgs/servicenow.webp",
+    imgPath: "/images/expCards/expImgs/relink.png",
     logoPath: "/images/expCards/expLogos/SN.png",
     title: "ResQLink – ServiceNow Disaster Response Platform",
     date: "In Development",
@@ -171,6 +177,8 @@ const showcaseCards = [
     review: "I advanced my skills in ITSM automation, REST API integration, agile software development, and learned to collaborate with global teams while working end-to-end on ServiceNow enterprise solutions.",
     imgPath: "/images/expCards/expImgs/servicenow.webp",
     logoPath: "/images/expCards/expLogos/SN.png",
+    link: "https://drive.google.com/file/d/1LN9khOtB-kiZ195QNOnQkE83Et7ulUM1/view?usp=sharing",
+    linkTest: "View: ServiceNow CSA & CAD Certificates",
     title: "ServiceNow – Virtual Internship (ITSM Automation & App Development)",
     date: "Jan 2025 – July 2025",
     responsibilities: [
@@ -185,6 +193,8 @@ const showcaseCards = [
     review: "I learned how to develop web modules for real-world products, collaborate in a fast-paced startup setting, and apply agile practices and modern frontend techniques to deliver user-focused smart parking solutions.",
     imgPath: "/images/expCards/expImgs/c2p.png",
     logoPath: "/images/expCards/expLogos/c2p.png",
+    link: "https://drive.google.com/file/d/1CjsWjxvHcLEjxli-kqchZdF7CcYCEHw7/view?usp=drive_link",
+    linkTest: " View: Connect2Park – Internship Certificate",
     title: "Web Development Intern – Connect2Park (ParkNSecure Pvt Ltd)",
     date: "May 2025 – June 2025",
     responsibilities: [
