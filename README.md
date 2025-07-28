@@ -2,7 +2,7 @@
 
 Welcome to the source code of my personal portfolio, an immersive 3-D web experience that highlights my skills, projects and interests.
 
-Live site → [https://www.agrawalvansh.me](https://www.agrawalvansh.me)
+Live site → [agrawalvansh.me](https://www.agrawalvansh.me)
 
 ---
 
@@ -38,7 +38,7 @@ This site is built entirely with modern, open-source tools:
 Clone the repository and install dependencies:
 
 ```bash
-git clone https://github.com/agrawalvansh/3d-portfolio.git
+git clone https://github.com/agrawalvansh/Vansh-Portfolio.git
 cd 3d-portfolio
 npm install   # or: yarn
 ```
