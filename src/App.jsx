@@ -6,6 +6,7 @@ import Experience from "./sections/Experience";
 import Hero from "./sections/Hero";
 import FeatureCards from "./sections/FeatureCards";
 import Navbar from "./components/NavBar";
+import Terminal from "./sections/Terminal";
 
 const App = () => (
   <>
@@ -17,6 +18,7 @@ const App = () => (
     {/* <Testimonials /> */}
     <Contact />
     <Footer />
+    <Terminal />
   </>
 );
 

@@ -51,8 +51,7 @@ const Hero = () => {
             </div>
 
             <p className="text-white-50 md:text-xl relative z-10 pointer-events-none">
-            Hi, I am Vansh Agrawal. I am a Full Stack Developer.<br /> I love to transform visionary ideas into reality.
-            </p>
+            Hi, I am Vansh Agrawal. I am a Full Stack Developer.<br /> I love to build scalable, user-friendly digital solutions.</p>
 
             <Button
               text="See My Work"
