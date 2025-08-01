@@ -120,16 +120,16 @@ const techStackIcons = [
 
 const expCards = [
   {
-    imgPath: "/images/expCards/expImgs/bhoomi.png",
-    logoPath: "/images/expCards/expLogos/Bhoomi.png",
-    title: "Bhoomi – Gardening Services Platform",
-    link: "https://the-bhoomi.vercel.app/",
-    linkTest: "the-bhoomi.vercel.app",
-    date: "Jan 2024 – Apr 2024",
+    imgPath: "/images/expCards/expImgs/erp.png",
+    logoPath: "/images/expCards/expLogos/ags.ico",
+    title: "Vyapaar Connect – Offline ERP Suite",
+    link: "https://amitgeneralstore.software",
+    linkTest: "amitgeneralstore.software",
+    date: "July 2024 – Dec 2024",
     responsibilities: [
-      "Addressed the lack of online gardening booking by creating a plant ordering and maintenance portal.",
-      "Implemented React.js frontend with Tailwind CSS, Styled Components, Framer Motion, and Redux Toolkit.",
-      "Empowered users to schedule services and track order history via a mobile‑friendly UI hosted on Vercel.",
+      "Eliminated dependence on internet for SMEs by creating a fully offline ERP platform.",
+      "Developed React/Tailwind frontend and Node/Express + SQLite backend with zero‑config migrations.",
+      "Helped small businesses generate GST‑compliant invoices and manage inventory without network costs.",
     ],
   },
   {
@@ -146,16 +146,16 @@ const expCards = [
     ],
   },
   {
-    imgPath: "/images/expCards/expImgs/erp.png",
-    logoPath: "/images/expCards/expLogos/ags.ico",
-    title: "Vyapaar Connect – Offline ERP Suite",
-    link: "https://ags-erp.vercel.app/",
-    linkTest: "ags-erp.vercel.app",
-    date: "July 2024 – Dec 2024",
+    imgPath: "/images/expCards/expImgs/bhoomi.png",
+    logoPath: "/images/expCards/expLogos/Bhoomi.png",
+    title: "Bhoomi – Gardening Services Platform",
+    link: "https://the-bhoomi.vercel.app/",
+    linkTest: "the-bhoomi.vercel.app",
+    date: "Jan 2024 – Apr 2024",
     responsibilities: [
-      "Eliminated dependence on internet for SMEs by creating a fully offline ERP platform.",
-      "Developed React/Tailwind frontend and Node/Express + SQLite backend with zero‑config migrations.",
-      "Helped small businesses generate GST‑compliant invoices and manage inventory without network costs.",
+      "Addressed the lack of online gardening booking by creating a plant ordering and maintenance portal.",
+      "Implemented React.js frontend with Tailwind CSS, Styled Components, Framer Motion, and Redux Toolkit.",
+      "Empowered users to schedule services and track order history via a mobile‑friendly UI hosted on Vercel.",
     ],
   },
   {

@@ -14,9 +14,20 @@ const FloatingTerminalInput = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    const input = command.trim().toLowerCase();
-
-    window.open('https://terminal.agrawalvansh.me/');
+  
+    const input = command.trim();
+    if (!input) return;
+  
+    // Encode query for safe URL usage
+    const encodedQuery = encodeURIComponent(input);
+  
+    // Redirect or open with query parameter
+    // window.location.href = `https://terminal.agrawalvansh.me/?q=${encodedQuery}`;
+  
+    // Or use window.open() in a new tab:
+    window.open("https://terminal.agrawalvansh.me/", '_blank');
+  
+    // Clear input and UI state
     setCommand('');
     setIsExpanded(false);
   };
