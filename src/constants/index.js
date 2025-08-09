@@ -173,19 +173,6 @@ const expCards = [
 
 const showcaseCards = [
   {
-    review: "I learned to design engaging digital content for large university events, boosting visibility and student engagement through creative collaboration and data-driven thinking.",
-    imgPath: "/images/expCards/expLogos/GS.png",
-    logoPath: "/images/expCards/expLogos/GS.png",
-    title: "Designer – GITAM SPORTS COMMITTEE",
-    date: "July 2025 – Present",
-    responsibilities: [
-      "Designing and producing creatives for 10+ major university sports events, including banners and social media posts.",
-      "Contributing to a 20% increase in event engagement through visually compelling content.",
-      "Collaborating with the media team to generate and edit creative ideas for promotional materials.",
-      "Helping boost student visibility and event participation through timely and impactful visual campaigns."
-    ],
-  },
-  {
     // ServiceNow Virtual Internship
     review: "I advanced my skills in ITSM automation, REST API integration, agile software development, and learned to collaborate with global teams while working end-to-end on ServiceNow enterprise solutions.",
     imgPath: "/images/expCards/expImgs/servicenow.webp",
@@ -214,6 +201,19 @@ const showcaseCards = [
       "Built and enhanced web components for smart parking products using JavaScript and modern frameworks.",
       "Contributed to product prototyping and iterative development with cross-functional teams.",
       "Experienced the startup culture: rapid development, frequent feedback cycles, and tight deadlines."
+    ],
+  },
+    {
+    review: "I learned to design engaging digital content for large university events, boosting visibility and student engagement through creative collaboration and data-driven thinking.",
+    imgPath: "/images/expCards/expLogos/GS.png",
+    logoPath: "/images/expCards/expLogos/GS.png",
+    title: "Designer – GITAM SPORTS COMMITTEE",
+    date: "July 2025 – Present",
+    responsibilities: [
+      "Designing and producing creatives for 10+ major university sports events, including banners and social media posts.",
+      "Contributing to a 20% increase in event engagement through visually compelling content.",
+      "Collaborating with the media team to generate and edit creative ideas for promotional materials.",
+      "Helping boost student visibility and event participation through timely and impactful visual campaigns."
     ],
   }
 ];

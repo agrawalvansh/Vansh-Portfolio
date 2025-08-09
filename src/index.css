@@ -10,6 +10,104 @@
   width: 8px;
 }
 
+.typing-animation {
+  overflow: hidden;
+  white-space: nowrap;
+  animation: typing 3.5s steps(40, end);
+}
+
+/* index.css */
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Custom Animations */
+@keyframes gradient-x {
+  0%, 100% {
+    background-size: 200% 200%;
+    background-position: left center;
+  }
+  50% {
+    background-size: 200% 200%;
+    background-position: right center;
+  }
+}
+
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+/* Custom Classes */
+.animate-gradient-x {
+  animation: gradient-x 15s ease infinite;
+}
+
+.typing-animation {
+  overflow: hidden;
+  white-space: nowrap;
+  animation: typing 3.5s steps(40, end);
+}
+
+/* Optional: Add some custom utility classes */
+@layer utilities {
+  .bg-gradient-animate {
+    background-size: 200% 200%;
+    animation: gradient-x 15s ease infinite;
+  }
+}
+
+/* index.css */
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Custom Animations */
+@keyframes gradient-x {
+  0%, 100% {
+    background-size: 200% 200%;
+    background-position: left center;
+  }
+  50% {
+    background-size: 200% 200%;
+    background-position: right center;
+  }
+}
+
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+/* Custom Classes */
+.animate-gradient-x {
+  animation: gradient-x 15s ease infinite;
+}
+
+.typing-animation {
+  overflow: hidden;
+  white-space: nowrap;
+  animation: typing 3.5s steps(40, end);
+}
+
+/* Optional: Add some custom utility classes */
+@layer utilities {
+  .bg-gradient-animate {
+    background-size: 200% 200%;
+    animation: gradient-x 15s ease infinite;
+  }
+}
+
+/* Mobile-specific adjustments */
+@media (max-width: 640px) {
+  .typing-animation {
+    white-space: normal;
+    animation: none;
+  }
+}
+
 ::-webkit-scrollbar-track {
   background: #0F1729;
 }
